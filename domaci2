@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#define maxduzina 100
+
+int provera(char *string, char *p)
+
+{
+    int brojac = 0, i;
+    for(i=0; i <= strlen(string); i++)
+    {
+        if(string[i] = *p)
+        {
+            brojac++;
+        }
+    }
+    return brojac;
+}
+int main()
+{
+    int brojac = 0;
+    char string[maxduzina], slovo;
+    char * p = &slovo;
+    printf("unesite slovo za proveru\n");
+    scanf("%c", &slovo);
+    printf("unesite string\n");
+    gets(string);
+    provera(string, p);
+    printf(" %i ", brojac);
+
+    return 0;
+}
