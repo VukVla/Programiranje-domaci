@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int jednaki(char *s1, char *s2)
+{
+    int brojac=0, i;
+    for(i=0; i<=strlen(s1); i++)
+    {
+        if(s1[i]!=s2[i])
+        {
+            brojac++;
+        }
+    }
+    return brojac;
+}
+
+int main()
+{
+    int brojac=0, i;
+    char s1[20], s2[20];
+    printf("unesite prvi string\n");
+    gets(s1);
+    printf("unesite drugi string\n");
+    gets(s2);
+    int a = strlen(s1);
+    int b = strlen(s2);
+
+    if(a == b)
+    {
+        brojac = jednaki(s1, s2);
+    }
+    else
+    {
+        printf("stringovi nisu jednaki");
+    }
+
+    if(brojac==0)
+    {
+        printf("stringovi su jednaki");
+    }
+    else
+    {
+        printf("stringovi nisu jednaki");
+    }
+    return 0;
+}
