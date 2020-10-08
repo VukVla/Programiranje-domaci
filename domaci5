@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int i, j, dimenzija;
+    printf("unesite dimenzije matrice\n");
+    scanf("%i", &dimenzija);
+    int matrica1[dimenzija][dimenzija];
+    int matrica2[dimenzija][dimenzija];
+    for(i=0; i<=dimenzija; i++)
+    {
+        for(j=0; j<=dimenzija; j++)
+        {
+            scanf("%i", matrica1[i][j]);
+        }
+    }
+    for(i=0; i<=dimenzija; i++)
+    {
+        for(j=0; j<=dimenzija; j++)
+        {
+            matrica2[i][j] = matrica1[j][i];
+        }
+    }
+    for(i=0; i<=dimenzija; i++)
+    {
+        for(j=0; j<=dimenzija; j++)
+        {
+            printf("%i", matrica2[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
