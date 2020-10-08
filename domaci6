@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void unos(int redovi, int kolone)
+{
+    for(i=0; i<redovi; i++)
+    {
+        for(j=0; j<kolone; j++)
+        {
+            scanf("%i", )
+        }
+    }
+}
+
+void sabiranje()
+{
+    
+}
+
+void ispis()
+{
+    
+}
+
+int main()
+{
+    int i, j, redovi, kolone;
+    printf("unesi broj redova:\n");
+    scanf("%i", &redovi);
+    printf("unesi broj kolona:\n");
+    scanf("%i", &kolona);
+    int matrica1[redovi][kolone];
+    int matrica2[redovi][kolone];
+    int matrica3[redovi][kolone];
+    return 0;
+}
