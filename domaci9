@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{
+    char naziv1[100], naziv2[100], naziv3[200];
+    printf("unesite naziv prvog fajla\n");
+    gets(naziv1);
+    FILE* p1 = fopen(naziv1, "r");
+    printf("unesite naziv prvog fajla\n");
+    gets(naziv2);
+    FILE* p2 = fopen(naziv1, "r");
+    strcat(naziv1, naziv2);
+    *naziv3 = *naziv1;
+    FILE* p3 = fopen("naziv3", "w+");
+    fputs(naziv3, "naziv3");
+    fclose(naziv1);
+    fclose(naziv1);
+    fclose("naziv3");
+    return 0;
+}
