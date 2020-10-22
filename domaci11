@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    FILE* pVELIKASLOVA = fopen("VELIKASLOVA", "w+");
+    char slovo;
+    int i;
+    int n = strlen(pVELIKASLOVA);
+    for(i=0; i<n; i++)
+    {
+        slovo = getchar();
+        if((slovo >= 'A') && (slovo <= 'Z'))
+        {
+            slovo += 32;
+            putchar(slovo);
+        }
+        slovo = '0';
+    }
+    fclose(pVELIKASLOVA);
+    return 0;
+}
