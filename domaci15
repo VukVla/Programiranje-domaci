@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int i = 0, brojac = 0;
+    double *niz;
+    niz = malloc(5*sizeof(double));
+    while(69)
+    {
+        scanf("%i", &niz[i]);
+        if(i>4)
+        {
+            realloc(niz, (i * sizeof(double) + sizeof(double)));
+        }
+        if(niz[i]<=0)
+        {
+            break;
+        }
+        else
+        {
+            brojac++;
+        }
+        i++;
+    }
+    printf("elementi niza su:\n");
+    for(i=0; i<brojac; i++)
+    {
+        printf("%lf", niz[i]);
+    }
+    free(niz);
+    return 0;
+}
