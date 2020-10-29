@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int n, i;
+    double zbir = 0;
+    printf("unesite duzinu niza: ");
+    scanf("%i", &n);
+    double *niz;
+
+    niz = malloc(n * sizeof(double));
+    for(i=0; i<n; i++)
+    {
+        scanf("%lf", &niz[i]);
+    }
+    for(i=0; i<n; i++)
+    {
+        zbir += niz[i];
+    }
+    printf("prosecna vrednost je %.2lf", zbir/n);
+    free(niz);
+    return 0;
+}
